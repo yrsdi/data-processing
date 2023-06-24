@@ -9,7 +9,8 @@ import (
 )
 
 func main() {
-	file, err := os.Open("/home/yrsdi/Downloads/1000000-sales-records.txt")
+	filename := "/home/yrsdi/Downloads/1000000-sales-records.txt"
+	file, err := os.Open(filename)
 	if err != nil {
 		log.Fatal(err)
 	}
