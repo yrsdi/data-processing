@@ -1,8 +1,9 @@
 import time
 
 start_time = time.time()
+filename = "/home/yrsdi/Downloads/1000000-sales-records.txt"
 
-with open("/home/yrsdi/Downloads/1000000-sales-records.txt", "r") as file:
+with open(filename, "r") as file:
     count = 0
     for line in file:
         if count >= 1_000_000:
